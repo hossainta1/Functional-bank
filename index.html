@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-5">Functional <span class="text-pink-600">Bank</span>!!! </h1>
+    </header>
+    <main>
+        <!-- balance and transaction summary -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Deposite</h4>
+                    <h2 class="text-5xl font-medium">$<span id="deposite-total">00</span> </h2>
+                </div>
+
+                <div class="bg-red-950 p-8 rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-5xl font-medium">$<span id="Withdraw-total">00</span> </h2>
+                </div>
+                <div class="bg-violet-900 p-8 rounded-lg">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-5xl font-medium">$<span id="balance-total">1240</span> </h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- deposite and withdraw section -->
+
+        <section>
+            <div class="grid grid-cols-2 gap-4">
+                <div></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
