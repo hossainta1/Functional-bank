@@ -8,6 +8,11 @@
 
 5. Calculate new deposite total
 
+6.get current balance
+
+7. calculate new balance and the total
+
+
 
 
 */
@@ -32,6 +37,17 @@ document.getElementById('btn-deposite').addEventListener('click', function () {
     const newDepositeTotal = previousDepositeTota + newDepositeAmount;
 
     depositeTotalElement.innerText = newDepositeTotal;
+
+    // step-6
+
+    const balanceTotalElement = document.getElementById('balance-total');
+    const previousBalanceTotalString = balanceTotalElement.innerText;
+    const previousBalanceTotal = parseFloat(previousBalanceTotalString);
+    // step-7
+    const newBalanceTotal = previousBalanceTotal + newDepositeTotal;
+
+    balanceTotalElement.innerText = newBalanceTotal;
+
 
 
 })
